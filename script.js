@@ -9,7 +9,7 @@ function beforeSubmit(event) {
         outputdate.value = formattedDate;
     }
     else {
-        alert("Please verify your identity uisng recaptcha");
+        alert("Please verify your identity usingg recaptcha");
         event.preventDefault();
     }
 
@@ -18,4 +18,5 @@ function timestamp() { var response = document.getElementById("g-recaptcha-respo
 
 function captchasuccess() {
     captchachecked = true;
+    console.log('captchachecked', captchachecked);
 }
